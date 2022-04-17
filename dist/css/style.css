@@ -341,10 +341,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   position: relative;
+}
+
+.intro__abs {
+  margin-top: -280px;
+}
+
+.intro__abs img {
+  width: 800px;
 }
 
 * {
@@ -471,6 +479,27 @@ ul {
   .disable-xxl {
     display: none !important;
   }
+
+  .intro__info {
+    z-index: -1;
+    margin-top: -15px;
+  }
+
+  .intro__p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .intro__content {
+    padding-top: 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -486,6 +515,17 @@ ul {
     font-weight: 300;
     font-size: 17px;
     line-height: 19px;
+  }
+
+  .intro__title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .intro__desc {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 30px;
   }
 
   .btn::before {
@@ -537,6 +577,14 @@ ul {
   .header__logo img {
     width: 50px;
   }
+
+  .intro {
+    padding-bottom: 40px;
+  }
+
+  .intro__info {
+    width: 650px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -546,6 +594,28 @@ ul {
 
   .disable-md {
     display: none !important;
+  }
+
+  .intro__title {
+    font-weight: 400;
+    font-size: 39px;
+    line-height: 40px;
+  }
+
+  .intro__desc {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .intro__info {
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  .intro__p {
+    font-size: 17px;
+    line-height: 20px;
   }
 }
 
@@ -571,6 +641,16 @@ ul {
   .header__p {
     max-width: 342px;
     width: 100%;
+  }
+
+  .intro {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .intro__title {
+    font-size: 31px;
   }
 }
 

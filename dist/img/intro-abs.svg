@@ -2,6 +2,7 @@
 <path d="M6.00001 0L0.226509 10L11.7735 10L6.00001 0ZM7 283L7.00001 9L5.00001 9L5 283L7 283Z" fill="white"/>
 <circle cx="968" cy="283" r="10" fill="white"/>
 <circle cx="968" cy="283" r="5" fill="url(#paint0_linear_110_35)"/>
+<line x1="968" y1="282" x2="8" y2="282" stroke="white" stroke-width="2"/>
 <defs>
 <linearGradient id="paint0_linear_110_35" x1="963" y1="282.947" x2="973" y2="282.947" gradientUnits="userSpaceOnUse">
 <stop stop-color="#09A6FF"/>
