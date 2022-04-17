@@ -1,0 +1,32 @@
+mixin popup()
+    .popup
+        .popup__close
+        .popup__body
+            p.popup__title PDF - мануал
+            p.popup__desc Оставь заявку и получи бесплатный PDF- мануал по выбору брокера
+            form(action="download.html").popup__form
+                .popup__input
+                    img(src="@img/popup-phone.svg", alt="" draggable="false" loading="lazy")
+                    input(type="text" name="name" placeholder="Ваше имя" required)#name
+                .popup__input 
+                    img(src="@img/popup-email.svg", alt="" draggable="false" loading="lazy")
+                    input(type="text" name="email" placeholder="Ваш e-mail" required)#email
+                .popup__input 
+                    .dropdown
+                        button(type="button").dropdown__top 
+                            .dropdown__btn 
+                                img(src="@img/popup-flag.svg", alt="" draggable="false" loading="lazy")
+                            .dropdown__arrow
+                                img(src="@img/popup-down.svg", alt="" draggable="false" loading="lazy")
+                        .dropdown__content#myDropdown
+                            .dropdown__img
+                                img(src="@img/popup-flag-usa.png", alt="" draggable="false" loading="lazy")
+                    input(type="text" placeholder="+7 (___) ___ - __ - __" name="phone" required)#phone
+                .popup__checkbox
+                    input(type="checkbox" name="checkbox" required)#checkbox
+                    label(for="checkbox").popup__label даю согласие на обработку персональных данных
+                button(type="submit").popup__btn.btn
+                    img(src="@img/intro-icon.svg", alt="" draggable="false" loading="lazy")
+                    | Получить PDF-Мануал
+            .popup__icon 
+                img(src="@img/popup-close-icon.svg", alt="" draggable="false" loading="lazy")  

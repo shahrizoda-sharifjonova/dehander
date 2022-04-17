@@ -1,4 +1,16 @@
 mixin footer()
     .footer 
         .footer__body.container
-            
+            p.footer__title Договор оферты
+            p.footer__desc Согласно федеральному закону "О рынке ценных бумаг" от 22.04.1996 N 39-ФЗ (сайт) не осуществляет брокерскую деятельность и не оказывает услуги Форекс дилинга. Все материалы на сайте носят исключительно информационный характер и не являются указанием к действию. Представленные данные – это только предположения, основанные на нашем опыте. Проведение торговых операций на финансовых рынках с маржинальными финансовыми инструментами имеет высокий уровень риска, поэтому подходит не всем инвесторам. Вы несёте полную ответственность за принятые торговые решения и результат, полученный в ходе работы.
+            .footer__content 
+                a(href="index.html").footer__logo.disable-md 
+                    img(src="@img/logo.svg", alt="" draggable="false" loading="lazy") 
+                    | инвестиционные идеи
+                .footer__info 
+                    a(href="tel:+7(499)348-24-41").footer__link
+                        img(src="@img/footer-phone.svg", alt="" draggable="false" loading="lazy")
+                        | +7 (499) 348-24-41 
+                    a(href="mailto:support@dehander.ru").footer__link
+                        img(src="@img/footer-email.svg", alt="" draggable="false" loading="lazy")
+                        | support@dehander.ru

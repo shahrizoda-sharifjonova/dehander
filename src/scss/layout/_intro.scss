@@ -105,4 +105,24 @@
             width: 800px;
         }
     }
+    &__btn{
+        margin-left: 12px;
+        @include media(1200){
+            margin-left: 0;
+        }
+    }
+}
+.intro2{
+    .intro__title{
+        max-width: 100% !important;
+    }
+    .intro__desc{
+        max-width: 100% !important;
+    }
+    .intro__content{
+        padding-bottom: 60px;
+        @include media(768){
+            padding-bottom: 20px;
+        }
+    }
 }

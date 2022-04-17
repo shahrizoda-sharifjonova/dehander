@@ -12,6 +12,9 @@
 }
 body{
     background: url('../img/bg.png') center / cover no-repeat;
+    &.active{
+        overflow: hidden;
+    }
 }
 .wrapper{
     min-height: 100%;
@@ -42,7 +45,7 @@ ul{
     justify-content: space-evenly;
     align-items: center;
     column-gap: 21px;
-    background: linear-gradient(90deg, #09A6FF 0%, #AF06FF 100%);
+    background: url(../img/bgmibu.png) left / cover no-repeat;
     border-radius: 20px;
     position: relative;
     width: 536px;
