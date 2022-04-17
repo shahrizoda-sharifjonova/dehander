@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
-    font-family: sans-serif;
+    font-family: Roboto;
     &:focus,
     &:active{
         outline: none;
@@ -26,4 +26,10 @@ button{
     background: none;
     border: none;
     cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
 }
